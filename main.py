@@ -5,6 +5,8 @@ app = Flask(__name__)
 
 filepath = "dictionary.csv"
 df = pd.read_csv(filepath)
+
+
 @app.route("/")
 def home():
     return render_template("home.html")
